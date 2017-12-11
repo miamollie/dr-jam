@@ -46,33 +46,60 @@
 
 	"use strict";
 
-	var toggleResumeItem = function toggleResumeItem(e) {
+	var toggleMenuDeSelect = function toggleMenuDeSelect() {
+	  var siblings = document.querySelectorAll("#menu *");
+	  siblings.forEach(function (s) {
+	    s.classList.remove("selected");
+	  });
+	};
+
+	var toggleResumeItem = function toggleResumeItem(event) {
 	  var resumeItems = document.querySelectorAll("[data-resume-item]");
-	  var targetId = e.target.id;
-	  resumeItems.forEach(function (item) {
-	    if (item.dataset.resumeItem === targetId) {
-	      show(item);
+	  var targetId = event.target.id;
+	  resumeItems.forEach(function (r) {
+	    if (r.dataset.resumeItem === targetId) {
+	      show(r);
 	    } else {
-	      hide(item);
+	      hide(r);
 	    }
 	  });
 	};
 
+	var toggle = function toggle(event) {
+
+	  toggleMenuDeSelect();
+
+	  toggleResumeItem(event);
+
+	  event.target.classList.add("selected");
+	};
+
 	var show = function show(el) {
 	  el.classList.remove("hide");
-	  el.classList.add("block");
+	  el.classList.add("flex");
 	};
 
 	var hide = function hide(el) {
 	  el.classList.add("hide");
-	  el.classList.remove("block");
+	  el.classList.remove("flex");
+	};
+
+	var hideAll = function hideAll() {
+	  toggleMenuDeSelect();
+	  var resumeItems = document.querySelectorAll("[data-resume-item]");
+	  resumeItems.forEach(function (item) {
+	    hide(item);
+	  });
 	};
 
 	var setUpMenu = function setUpMenu() {
 	  var menuItems = document.querySelectorAll("#menu button");
 	  menuItems.forEach(function (menuItem) {
-	    menuItem.addEventListener("click", toggleResumeItem);
+	    menuItem.addEventListener("click", toggle);
 	  });
+
+	  var title = document.querySelector("#menu h1");
+	  title.addEventListener("click", hideAll);
 	};
 
 	document.addEventListener('DOMContentLoaded', function () {

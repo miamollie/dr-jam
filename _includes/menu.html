@@ -1,6 +1,9 @@
-<div id="menu">
+<div id="menu" class="flex flex-column items-start" >
+  <h1 class="f1 black">{{include.title}}</h1>
   {% for item in include.menu %}
-  <button id="{{ item.id | downcase }}">
+  <button id="{{ item.id | downcase }}"
+    class="f2 black"
+  >
     {{ item.title }}
   </button>
   {% endfor %}
