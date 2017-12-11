@@ -5,13 +5,29 @@
   height: 100%;
 }
 
+// Resume Item
+
 .resume-item {
   min-height: 50vh;
+  max-height: 50vh;
   transition: all .5s ease;
   -webkit-box-shadow: inset 2px 2px 5px 0px rgba(62,94,133,1);
   -moz-box-shadow: inset 2px 2px 5px 0px rgba(62,94,133,1);
   box-shadow: inset 2px 2px 5px 0px rgba(62,94,133,1);
   overflow-y: scroll;
+  :first-child {
+    min-height: 50.05vh;
+  }
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
 
 

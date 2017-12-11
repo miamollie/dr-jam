@@ -1,7 +1,9 @@
 {% for item in include.items %}
-<div class="resume-item hide flex-column f3 py-2 px-1 mx-4 my-2 black"
+<div class="resume-item hide items-start justify-start flex-column f3 py-4 px-2 mx-4 my-2 black"
   data-resume-item="{{ item.id | downcase}}"
 >
-  {{ item.body | markdownify }}
+  <div>
+    {{ item.body | markdownify }}
+  </div>
 </div>
 {% endfor %}
