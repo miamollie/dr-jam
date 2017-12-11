@@ -46,5 +46,42 @@
 
 	"use strict";
 
+	var toggleResumeItem = function toggleResumeItem(e) {
+	  var resumeItems = document.querySelectorAll("[data-resume-item]");
+	  var targetId = e.target.id;
+	  resumeItems.forEach(function (item) {
+	    if (item.dataset.resumeItem === targetId) {
+	      show(item);
+	    } else {
+	      hide(item);
+	    }
+	  });
+	};
+
+	var show = function show(el) {
+	  el.classList.remove("hide");
+	  el.classList.add("block");
+	};
+
+	var hide = function hide(el) {
+	  el.classList.add("hide");
+	  el.classList.remove("block");
+	};
+
+	var setUpMenu = function setUpMenu() {
+	  var menuItems = document.querySelectorAll("#menu button");
+	  menuItems.forEach(function (menuItem) {
+	    menuItem.addEventListener("click", toggleResumeItem);
+	  });
+	};
+
+	document.addEventListener('DOMContentLoaded', function () {
+	  setUpMenu();
+	});
+
+	// spinner until loaded
+	//and then remove that class and let the menu softly fade
+	// and animate in from the right
+
 /***/ }
 /******/ ]);
