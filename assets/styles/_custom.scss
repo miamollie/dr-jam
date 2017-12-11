@@ -1,0 +1,40 @@
+.full-width {
+  width: 100vw;
+  max-width: 100vw;
+  max-height: 100vh;
+  height: 100%;
+}
+
+.resume-item {
+  min-height: 50vh;
+  transition: all .5s ease;
+  -webkit-box-shadow: inset 2px 2px 5px 0px rgba(62,94,133,1);
+  -moz-box-shadow: inset 2px 2px 5px 0px rgba(62,94,133,1);
+  box-shadow: inset 2px 2px 5px 0px rgba(62,94,133,1);
+  overflow-y: scroll;
+}
+
+
+// Menu
+
+#menu h1, #menu button {
+  cursor: pointer;
+  transition: all .5s ease;
+  transform: translateX(-5px);
+  &:hover, &.selected {
+    color: black;
+    transform: translateX(5px);
+  }
+}
+
+#menu button {
+  &:before {
+    transition: all .5s ease;
+    content: '>';
+    font-size: 4rem;
+    opacity: 0;
+  }
+  &:hover:before, &.selected:before {
+    opacity: 1;
+  }
+}

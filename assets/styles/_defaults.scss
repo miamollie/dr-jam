@@ -18,11 +18,19 @@ html {
 }
 
 body {
+  width: 100vw;
+  max-width: 100vw;
+  max-height: 100vh;
   position: relative;
   font-size: 1.6rem;
 }
 
+p {
+  margin-bottom: 15px;
+}
+
 ul {
+  margin-left: 5px;
   padding: 0;
   list-style-type: none;
 }
