@@ -1,0 +1,7 @@
+<div id="menu">
+  {% for item in include.menu %}
+  <button id="{{ item.id | downcase }}">
+    {{ item.title }}
+  </button>
+  {% endfor %}
+</div>

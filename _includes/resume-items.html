@@ -1,0 +1,10 @@
+<div class="resume-items">
+  {% for item in include.items %}
+  <div class="resume-item hide" data-resume-item="{{ item.id | downcase}}">
+    {{ item.body | markdownify }}
+    {% if item.list %}
+      {% include checklist.html list=item.list %}
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
