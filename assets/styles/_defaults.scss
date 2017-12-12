@@ -13,7 +13,7 @@ html {
   }
 
   @media #{$breakpoint-lg} {
-    font-size: 0.5vw;
+    font-size: 0.8vw;
   }
 }
 
@@ -36,6 +36,13 @@ h2, h3, p {
 ul {
   margin: 15px 30px;
   padding: 0;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 path {

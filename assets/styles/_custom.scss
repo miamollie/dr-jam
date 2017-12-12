@@ -34,17 +34,19 @@
 
 // Menu
 
-#menu h1, #menu button {
+#menu {
+  h1, button, a {
   cursor: pointer;
   transition: all .5s ease;
   transform: translateX(-5px);
-  &:hover, &.selected {
-    color: black;
-    transform: translateX(5px);
+    &:hover, &.selected {
+      color: black;
+      transform: translateX(5px);
+    }
   }
 }
 
-#menu button {
+#menu button, #menu a {
   &:before {
     transition: all .5s ease;
     content: '>';
