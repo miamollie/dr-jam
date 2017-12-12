@@ -1,8 +1,8 @@
 {% for item in include.items %}
-<div class="resume-item hide items-start justify-start flex-column f3 py-4 px-2 mx-4 my-2 black"
+<div class="resume-item hide f3 py-4 px-2 mx-4 my-2 black"
   data-resume-item="{{ item.id | downcase}}"
 >
-  <div>
+  <div class="flex items-start justify-start flex-column">
     {{ item.body | markdownify }}
   </div>
 </div>

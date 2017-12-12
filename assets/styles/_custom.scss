@@ -8,15 +8,16 @@
 // Resume Item
 
 .resume-item {
-  min-height: 50vh;
-  max-height: 50vh;
+  min-height: 66vh;
+  max-height: 66vh;
+  width: 80%;
   transition: all .5s ease;
   -webkit-box-shadow: inset 2px 2px 5px 0px rgba(62,94,133,1);
   -moz-box-shadow: inset 2px 2px 5px 0px rgba(62,94,133,1);
   box-shadow: inset 2px 2px 5px 0px rgba(62,94,133,1);
   overflow-y: scroll;
-  :first-child {
-    min-height: 50.05vh;
+  div:first-child {
+    min-height: 66.05vh;
   }
 }
 
