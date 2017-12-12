@@ -1,29 +1,50 @@
 ---
-title: Boop boop boop
+title: Dr. Jamie A. Mackay
 layout: home
 resume:
-- title: Lorem
-  id: Lorem
+- title: MBBS Other Title
+  id: qualifications
   body: |-
-    Lorem agile frameworks to provide a robust synopsis for high level overviews.
+    My Schoolin'
+    ====
 
-    Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition
-    - thinking
-    - thinking
-    - thing
+    - 2000–2002 Doctoring in the doctor place
+    - 2002–2004 Degree of Medicine, Melbourne University
+    - 2002–2004 Hung out in Norway
+    - Higher Diploma in Teaching people to doctor good
 
-    dippyderp
-- title: Blorem
-  id: blorem
+    I also published a paper and presented it in San Fran cause I'm super cool
+
+
+- title: Career Placements
+  id: placements
   body: |-
-    Blorem agile frameworks to provide a robust synopsis for high level overviews.
+    Rotations
+    ====
+    I went these placements
 
-    Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition
-- title: Smorem
-  id: Smorem
+    - Place
+    - Other Place
+    - Is this relevant?
+
+    Fellowship
+    ====
+
+    - **Helicopters**: give a nice little summary blurb
+    - Northern where I learnt things and stuff
+
+    ----
+    ****
+
+- title: Advanced Training and Conferences
+  id: training
   body: |-
-    SMorem agile frameworks to provide a robust synopsis for high level overviews.
 
-    Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition
+    Blah blah *blah*
+
+- title: Personal Interests
+  id: interests
+  body: |-
+    Robots and what not
 
 ---
