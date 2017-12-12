@@ -7,8 +7,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {% seo %}
-    <script type="text/javascript" src="/assets/scripts/dist/app.js"></script>
-    <link rel="stylesheet" href="/assets/styles/app.css" />
+    <script type="text/javascript" src="{{"/assets/scripts/dist/app.js" | relative_url }}"></script>
+    <link rel="stylesheet" href="{{ "/assets/styles/app.css" | relative_url }}" />
   </head>
   <body>
     {{ content }}
