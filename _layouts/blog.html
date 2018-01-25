@@ -1,14 +1,22 @@
 ---
 layout: default
 ---
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-      <a href="{{ post.url }}">
-      Read more
-    </a>
-    </li>
-  {% endfor %}
-</ul>
+<div class="flex ">
+  <div class="side-nav">
+    <div class="avatar"></div>
+    {{ content }}
+  </div>
+  <div>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+            {{ post.excerpt }}
+          <a href="{{ post.url }}">
+            Read more
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>

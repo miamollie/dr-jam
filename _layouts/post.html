@@ -1,15 +1,14 @@
 ---
 layout: default
 ---
-
-//page.title
-
-// include below as side menu
-<!-- <ul>
-  {% for post in site.posts %}
-    <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
-      {{ post.excerpt }}
-    </li>
-  {% endfor %}
-</ul> -->
+<div class="flex ">
+  <div class="side-nav">
+    {% include blog-posts.html %}
+  </div>
+  <div>
+    <h1>{{ page.title }}</h1>
+    <div class="copy">
+      {{ page.content }}
+    </div>
+  </div>
+</div>
